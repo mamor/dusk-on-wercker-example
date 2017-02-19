@@ -1,0 +1,17 @@
+# PHPUnit
+#   docker-compose run --rm testing bash -i -c "gulp --gulpfile=/var/app/gulpfile.js ci:testing:phpunit"
+# Laravel Dusk
+#   docker-compose run --rm testing bash -i -c "gulp --gulpfile=/var/app/gulpfile.js ci:testing:dusk"
+# Both
+#   docker-compose run --rm testing bash -i -c "gulp --gulpfile=/var/app/gulpfile.js ci:testing:all"
+
+version: "2"
+services:
+  testing:
+    image: madworks/php-ci
+    command: tail -f /dev/null
+    volumes:
+      - ~/.composer/cache:/root/.composer/cache
+      - ./:/var/app
+      - .env.ci.app:/var/app/.env
+      - /var/app/vendor

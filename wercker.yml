@@ -1,0 +1,19 @@
+box: madworks/php-ci
+build:
+  steps:
+    - script:
+      name: build
+      code: |
+        yarn config set cache-folder ${WERCKER_CACHE_DIR}/yarn
+        source /root/.phpbrew/bashrc
+        cp -r ./ /var/app
+        cp .env.ci.app /var/app/.env
+        yarn install --prefer-offline --production
+        gulp ci:testing:all
+
+deploy:
+  steps:
+    - script:
+      name: deploy
+      code: |
+        which cap
