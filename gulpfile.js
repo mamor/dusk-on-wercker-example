@@ -62,7 +62,7 @@ gulp.task('ci:run:phpunit', shell.task([
 gulp.task('ci:run:dusk', shell.task([
   [
     'cd /var/app',
-    'php artisan app:dusk'
+    'php artisan dusk'
   ].join(' && ')
 ]));
 
