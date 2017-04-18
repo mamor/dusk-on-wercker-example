@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f221355db26508cf61f83cced5b80687",
+    "content-hash": "458a29f31a98f80556eb7c5d80abf673",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2065,17 +2065,11 @@
         },
         {
             "name": "laravel/dusk",
-            "version": "dev-master",
+            "version": "dev-revert-223-TTY",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/dusk.git",
-                "reference": "39fdc5f58e1110e947b1efab796d83ddc6f9fd53"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/39fdc5f58e1110e947b1efab796d83ddc6f9fd53",
-                "reference": "39fdc5f58e1110e947b1efab796d83ddc6f9fd53",
-                "shasum": ""
+                "url": "https://github.com/deleugpn/dusk",
+                "reference": "02eede2df2fbf1e77b608970580d97263a7f9acc"
             },
             "require": {
                 "facebook/webdriver": "~1.0",
@@ -2100,7 +2094,6 @@
                     "Laravel\\Dusk\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2116,7 +2109,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2017-04-18T13:42:49+00:00"
+            "time": "2017-04-18T14:00:09+00:00"
         },
         {
             "name": "mockery/mockery",

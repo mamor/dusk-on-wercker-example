@@ -11,10 +11,16 @@
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
-        "laravel/dusk": "dev-master#4bce8f5a8917a0f500cdcc31ae3491f1583b8b84",
+        "laravel/dusk": "dev-revert-223-TTY",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/deleugpn/dusk"
+        }
+    ],
     "autoload": {
         "classmap": [
             "database"
